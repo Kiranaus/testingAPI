@@ -3,12 +3,14 @@ import bodyparser from "body-parser"
 
 
 const app = express()
-app.use(bodyparser.json())
+const port = 3000
 
-app.get('/', function(req,res){
-    res.send("hiiii")
+app.use(bodyparser.json());
+
+app.get('/', (req, res) => {
+  res.send('Hello World!')
 })
-app.listen(3000 , function (){
-    console.log('Hey server ready ');
 
+app.listen(port, () => {
+  console.log(`Example app listening on port: http://localhost:${port}`)
 })
