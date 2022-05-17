@@ -8,7 +8,8 @@ const port = 3000
 app.use(bodyparser.json());
 app.use('/users',usersRoutes);
 
-app.get('/', (req, res) => res.send('Hello World!'));
+app.get('/', (req, res) => 
+res.send('Hello World!'));
 
 app.listen(port, () => {
   console.log(` App listening on port: http://localhost:${port}`)
