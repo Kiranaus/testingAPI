@@ -17,7 +17,7 @@ Steps to explain about it :
 
 
 --- To install Express using npm :
-**$ npm install express --save **
+**$ npm install express --save**
 
 ---Body-parser is the Node. js body parsing middleware.
 **$ npm install body-parser**
